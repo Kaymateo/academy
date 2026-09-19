@@ -1,0 +1,22 @@
+{
+  "name": "academy",
+  "version": "1.0.0",
+  "description": "Apple 风格网课平台：网课视频 + 兑换码解锁系统",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js",
+    "build": "cd client && npm run build",
+    "setup": "node server/index.js --init-only",
+    "install:client": "cd client && npm install"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

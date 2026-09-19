@@ -1,0 +1,25 @@
+# 依赖
+node_modules/
+client/node_modules/
+client/dist/
+
+# 运行时数据库（启动时自动建表 + 初始化管理员 admin/admin123456）
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# 用户上传的视频 / 封面 / 预览片段（体积大，不入库）
+uploads/videos/*
+uploads/previews/*
+uploads/covers/*
+!uploads/videos/.gitkeep
+!uploads/previews/.gitkeep
+!uploads/covers/.gitkeep
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+*.tar.gz
